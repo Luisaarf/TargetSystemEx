@@ -1,0 +1,15 @@
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\bin\Debug\net7.0\target-project.exe
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\bin\Debug\net7.0\target-project.deps.json
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\bin\Debug\net7.0\target-project.runtimeconfig.json
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\bin\Debug\net7.0\target-project.dll
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\bin\Debug\net7.0\target-project.pdb
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\obj\Debug\net7.0\target-project.csproj.AssemblyReference.cache
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\obj\Debug\net7.0\target-project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\obj\Debug\net7.0\target-project.AssemblyInfoInputs.cache
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\obj\Debug\net7.0\target-project.AssemblyInfo.cs
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\obj\Debug\net7.0\target-project.csproj.CoreCompileInputs.cache
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\obj\Debug\net7.0\target-project.dll
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\obj\Debug\net7.0\refint\target-project.dll
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\obj\Debug\net7.0\target-project.pdb
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\obj\Debug\net7.0\target-project.genruntimeconfig.cache
+C:\Users\luluf\OneDrive\Documentos\programacao\target-project\obj\Debug\net7.0\ref\target-project.dll

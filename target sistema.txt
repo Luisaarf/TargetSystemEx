@@ -1,0 +1,32 @@
+------------ Planejamento -------------------
+1- i=13 K 0 S=0   até que K < 13
+K= K+1 
+S = S +K
+2-
+Sequência de Fibonacci
+(0, 1, 1, 2, 3, 5, 8, 13, 21, 34...)
+receber entrada de um valor e verificar se pertence ou não a sequência 
+enquanto o num for <= entrada (loop for)
+int num = 0
+for i++, i <= ent, i = 1
+
+if (num === ent) {
+	return
+}
+
+3- Pegar o json e verificar qual o menor e o maior valor
+Calcular média mensal 
+num de dias no mês que o valor de faturamento diário foi superior à media
+se o valor 0 ignorar no cálculo
+
+4-  Porcentagem de cada estado  (100% soma de tudo)
+SP – R$67.836,43
+RJ – R$36.678,66
+MG – R$29.229,88
+ES – R$27.165,48
+Outros – R$19.849,53
+
+5- 
+string por input
+inverter os caracteres de uma string
+string é array, fazer pop() e colocar em um novo array
