@@ -3,6 +3,7 @@ namespace target_project.code {
     {
         public void Exercise2()
         {
+            // (0, 1, 1, 2, 3, 5, 8, 13, 21, 34...)
             Console.WriteLine("Digite um valor para verificar se ele está presente na sequência de Fibonacci");
             int value = Convert.ToInt16(Console.ReadLine());
             if (value == 0)
@@ -15,7 +16,6 @@ namespace target_project.code {
                 Console.WriteLine("O valor " + value + " não está presente na sequência de Fibonacci");
                 return;
             }
-            // (0, 1, 1, 2, 3, 5, 8, 13, 21, 34...)
             int a = 0;
             int c = 0;
             int b =1;
