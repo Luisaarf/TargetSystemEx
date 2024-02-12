@@ -32,14 +32,14 @@ switch (exercise)
         exercise3 ex3 = new exercise3();
         ex3.Exercise3();
         break;
-    // case 4:
-    //     exercise4 ex4 = new exercise4();
-    //     ex4.Exercise4();
-    //     break;
-    // case 5:
-    //     exercise5 ex5 = new exercise5();
-    //     ex5.Exercise5();
-    //     break;
+    case 4:
+        exercise4 ex4 = new exercise4();
+        ex4.Exercise4();
+        break;
+    case 5:
+        exercise5 ex5 = new exercise5();
+        ex5.Exercise5();
+        break;
     default:
         Console.WriteLine("Exercício não encontrado");
         break;
