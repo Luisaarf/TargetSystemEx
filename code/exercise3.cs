@@ -15,15 +15,13 @@ namespace target_project.code {
                 dailyBilling = (List<DailyBilling>)js.ReadObject(ms);
             }
 
-            // Console.WriteLine("Digite o dia que deseja consultar:");
-            // int day = Convert.ToInt16(Console.ReadLine());
             if (dailyBilling != null && dailyBilling.Count > 0)
             {
                 DailyBilling biggestDailyBilling = new DailyBilling();
                 DailyBilling smallestDailyBilling = new DailyBilling();
-                //retira dias com valor 0 
                 for(int i = 0; i < dailyBilling.Count; i++)
                 {
+                    //encontra o maior e menor faturamento diário
                     if(i == 0){
                         biggestDailyBilling = dailyBilling[i];
                         smallestDailyBilling = dailyBilling[i];
@@ -34,16 +32,44 @@ namespace target_project.code {
                     if(dailyBilling[i].valor < smallestDailyBilling.valor && dailyBilling[i].valor != 0.0){
                         smallestDailyBilling = dailyBilling[i];
                     }
+                //retira dias com valor 0 
                     if(dailyBilling[i].valor == 0.0){
                         dailyBilling.RemoveAt(i);
                         i--;
                     }
                 }
+                double valuesum = 0;
+                //calcular faturamento total
+                for(int i = 0; i < dailyBilling.Count; i++)
+                {
+                    valuesum += dailyBilling[i].valor;
 
-                Console.WriteLine(biggestDailyBilling.dia);
-                Console.WriteLine(biggestDailyBilling.valor);
-                Console.WriteLine(smallestDailyBilling.dia);
-                Console.WriteLine(smallestDailyBilling.valor);
+                }
+
+                Console.WriteLine("----------------------------------");
+                Console.WriteLine("Maior faturamento diário:");
+                Console.WriteLine("Dia: " + biggestDailyBilling.dia);
+                Console.WriteLine("Valor: " + biggestDailyBilling.valor);
+                Console.WriteLine("----------------------------------");
+                Console.WriteLine("Menor faturamento diário:");
+                Console.WriteLine("Dia: " + smallestDailyBilling.dia);
+                Console.WriteLine("Valor: " + smallestDailyBilling.valor);
+                Console.WriteLine("----------------------------------"); 
+                double average = valuesum / dailyBilling.Count;
+                Console.WriteLine("Faturamento médio:" + average );
+                Console.WriteLine("Faturamento total: " + valuesum);
+                // alternativa para calcular média: 
+                // Console.WriteLine("Valor: " + dailyBilling.Average(x => x.valor));
+                //calcula dias com faturamento acima da média
+                int profitableDays=0;
+                for(int i = 0; i < dailyBilling.Count; i++)
+                {
+                    if(dailyBilling[i].valor > average){
+                        profitableDays++;
+                    }
+                }
+
+                Console.WriteLine("Dias com faturamento acima da média: " + profitableDays);
 
             }
         }
