@@ -12,7 +12,9 @@ namespace target_project.code {
             // var dailyBilling = (List<DailyBilling>)js?.ReadObject(ms);
             var dailyBilling = new List<DailyBilling>();
             if (js != null && ms != null){
+                #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 dailyBilling = (List<DailyBilling>)js.ReadObject(ms);
+                #pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
             }
 
             if (dailyBilling != null && dailyBilling.Count > 0)
