@@ -28,10 +28,10 @@ switch (exercise)
         exercise2 ex2 = new exercise2();
         ex2.Exercise2();
         break;
-    // case 3:
-    //     exercise3 ex3 = new exercise3();
-    //     ex3.Exercise3();
-    //     break;
+    case 3:
+        exercise3 ex3 = new exercise3();
+        ex3.Exercise3();
+        break;
     // case 4:
     //     exercise4 ex4 = new exercise4();
     //     ex4.Exercise4();
