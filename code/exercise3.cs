@@ -20,11 +20,19 @@ namespace target_project.code {
             if (dailyBilling != null && dailyBilling.Count > 0)
             {
                 DailyBilling biggestDailyBilling = new DailyBilling();
+                DailyBilling smallestDailyBilling = new DailyBilling();
                 //retira dias com valor 0 
                 for(int i = 0; i < dailyBilling.Count; i++)
                 {
+                    if(i == 0){
+                        biggestDailyBilling = dailyBilling[i];
+                        smallestDailyBilling = dailyBilling[i];
+                    }
                     if(dailyBilling[i].valor > biggestDailyBilling.valor){
                         biggestDailyBilling = dailyBilling[i];
+                    }
+                    if(dailyBilling[i].valor < smallestDailyBilling.valor && dailyBilling[i].valor != 0.0){
+                        smallestDailyBilling = dailyBilling[i];
                     }
                     if(dailyBilling[i].valor == 0.0){
                         dailyBilling.RemoveAt(i);
@@ -34,6 +42,8 @@ namespace target_project.code {
 
                 Console.WriteLine(biggestDailyBilling.dia);
                 Console.WriteLine(biggestDailyBilling.valor);
+                Console.WriteLine(smallestDailyBilling.dia);
+                Console.WriteLine(smallestDailyBilling.valor);
 
             }
         }
